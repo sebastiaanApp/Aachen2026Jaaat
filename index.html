@@ -198,6 +198,16 @@
     position: relative;
     overflow: hidden;
   }
+.highlight-box2 {
+    background: #5a3a8b;
+    color: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+  }
+
   .highlight-box::after {
     content: '📚';
     position: absolute;
@@ -350,21 +360,22 @@
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-badge">✦ Weekendtrip voor 2 ✦</div>
-  <h1>Hey babe, we gaan naar<br><em>Aachen</em></h1>
-  <div class="hero-subtitle">Een weekend vol charme, cultuur & kleine avonturen</div>
-  <div class="hero-dates">Justine <3 Seb &nbsp;·&nbsp; 15 – 17 mei 2025 &nbsp;·&nbsp; 2 nachten &nbsp;·&nbsp; Oneindig veel keuze</div>
+  <!-- <div class="hero-badge">4e verjaardag ❤️❤️❤️<br>2022-👴🏻👵🏻</div> -->
+  <h1>Hey!!!<br>Big surprise, helaas was <em>Parijs</em> al volboekt!<br>Daarom maar PLAN-B<br>We gaan naar <em>Aken (Aachen)</em></h1>
+  <div class="hero-subtitle">Dit wordt een weekend voor Avontuur - Plezier - Liefde - Lekkere dingen - en nog veel meer</div>
+  <div class="hero-dates">Justine ❤️ Seb &nbsp;·&nbsp; 15 – 17 mei 2025 &nbsp;·&nbsp; 2 nachten &nbsp;·&nbsp; Oneindig veel keuze</div>
   <div class="hero-tags">
-    <span class="tag">🥾 Wandelen</span>
-    <span class="tag">📚 Boekenwinkels</span>
-    <span class="tag">🐘 Dierenpark</span>
-    <span class="tag">🎲 Games & Bordspellen</span>
-    <span class="tag">🌿 Natuur</span>
-    <span class="tag">☕ Terrasjes</span>
-    <span class="tag">🛍️ Shoppen</span>
-    <span class="tag">🏛️ Musea</span>
+    <a class="tag">🥾 Wandelen</a>
+    <a class="tag">📚 Boekenwinkels</a>
+    <a class="tag">🐘 Dierenpark</a>
+    <a class="tag">🎲 Games & Bordspellen</a>
+    <a class="tag">🌿 Natuur</a>
+    <a class="tag">☕ Terrasjes</a>
+    <a class="tag">🛍️ Shoppen</a>
+    <a class="tag">🏛️ Musea</a>
   </div>
 </div>
+
 
 <!-- INTRO STRIP -->
 <div class="intro-strip">
@@ -372,10 +383,26 @@
   <p>Aachen is een van de meest onderschatte steden van Europa — op een steenworp van de Belgische grens. Hier botsen geschiedenis en hipheid op de lekkerste manier. Van middeleeuwse kathedralen tot cozy boekencafés, van verborgen wandelpaden tot retrogamewinkels die je nooit meer wil verlaten. Deze brochure is geen dagplanning, maar een menukaart van alles wat Aachen te bieden heeft. Kies wat jullie anstaat.</p>
 </div>
 
+  <div class="highlight-box2">
+    <h3>🏨 Ons Hotel: Model One Aachen</h3>
+    <p></p>
+    <ul class="highlight-list">
+      <li>
+        <span>📖</span>
+        <div>
+          <p>Kapuzinergraben 6-10, Aachen Mitte, 52062 Aken</p>
+          <p>Inchechen Vr 15/5 15:00 - Uitchecken Zo 17/5 12:00</p>
+          <a href="https://www.booking.com/hotel/de/motel-one-aachen.nl.html?label=gen173nr-10CAEoggI46AdIHFgEaBWIAQGYATO4ARfIAQzYAQPoAQH4AQGIAgGoAgG4Av6-jdAGwAIB0gIkMDA0NDZkMDktMjRiNS00OGEwLTk5YjMtZjIxOWQ0OTU0N2Zm2AIB4AIB&sid=f6b1c2b9fe852dcfc97e60a3886e39bf&aid=304142" target="_blank">Motel One Aachen</a> &nbsp;|&nbsp; <a href="https://www.google.com/maps/place/Hotel+Motel+One+Aachen/@50.7732394,6.0863119,687m/data=!3m2!1e3!4b1!4m9!3m8!1s0x47c0995a4ebab0af:0xc206df07219e87d5!5m2!4m1!1i2!8m2!3d50.7732394!4d6.0863119!16s%2Fg%2F11hz_8jc_n?entry=ttu&g_ep=EgoyMDI2MDUwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">📍 Maps</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
 <div class="content">
 
   <!-- NATUUR & WANDELEN -->
-  <div class="section">
+  <div class="section" id="wandelen">
     <div class="section-label">Natuur & Beweging</div>
     <div class="section-title">🥾 Wandelen & <em>de natuur in</em></div>
 
@@ -437,7 +464,7 @@
   </div>
 
   <!-- DIERENPARK -->
-  <div class="section">
+  <div class="section" id="dierenpark">
     <div class="section-label">Dieren & Natuur</div>
     <div class="section-title">🐘 <em>Dierenparkavontuur</em></div>
 
@@ -465,7 +492,7 @@
   <div class="divider"></div>
 
   <!-- BOEKENWINKELS HIGHLIGHT -->
-  <div class="highlight-box">
+  <div class="highlight-box" id="boekenwinkels">
     <h3>📚 De Boekenminnaar's Gids voor Aachen</h3>
     <p>Aachen heeft een verrassend rijke boekencultuur voor een stad van zijn formaat. Hieronder de absolute must-visits voor bibliofiele reizigers.</p>
     <ul class="highlight-list">
@@ -493,7 +520,7 @@
   </div>
 
   <!-- GAMES & BORDSPELLEN -->
-  <div class="section">
+  <div class="section" id="games">
     <div class="section-label">Games & Play</div>
     <div class="section-title">🎲 <em>Speelparadijs</em> Aachen</div>
 
@@ -530,7 +557,7 @@
   <div class="divider"></div>
 
   <!-- MUSEA -->
-  <div class="section">
+  <div class="section" id="musea">
     <div class="section-label">Cultuur & Curiosa</div>
     <div class="section-title">🏛️ Originele & <em>bijzondere musea</em></div>
 
@@ -576,7 +603,7 @@
   <div class="divider"></div>
 
   <!-- CAFÉS & TERRASSEN -->
-  <div class="section">
+  <div class="section" id="terrasjes">
     <div class="section-label">Koffie & TerrasjesCultuur</div>
     <div class="section-title">☕ Chillplekken & <em>gezellige cafés</em></div>
 
@@ -638,7 +665,7 @@
   <div class="divider"></div>
 
   <!-- SHOPPEN -->
-  <div class="section">
+  <div class="section" id="shoppen">
     <div class="section-label">Retail Therapy</div>
     <div class="section-title">🛍️ Shoppen & <em>slenteren</em></div>
 
@@ -678,7 +705,7 @@
   </div>
 
   <!-- GEZELLIGE STRAATJES -->
-  <div class="section">
+  <div class="section" id="gezellige straatjes">
     <div class="section-label">Sfeer & Architectuur</div>
     <div class="section-title">🏘️ Verborgen <em>pareltjes & straatjes</em></div>
 
@@ -873,10 +900,10 @@
 
 <!-- FOOTER / SLOGAN -->
 <div class="footer">
-  <div class="slogan">"Twee harten, één stad,<br>oneindig veel verhalen om mee naar huis te nemen."</div>
-  <p>Aachen wacht op jullie. Met zijn eeuwenoude straatjes, de geur van versgemalen koffie, stapels boeken in sfeervolle winkels en de perfecte mix van natuur en cultuur, is dit het ideale weekend voor twee mensen die van mooie dingen houden. Pak jullie rugzak, zet de GPS op Aachen, en ontdek samen een van de verborgen juwelen van Europa.</p>
+  <div class="slogan">"Tis dan geen Parijs,<br>Aachen is ook best wijs 😊</div>
+ <!--<p>Aachen wacht op jullie. Met zijn eeuwenoude straatjes, de geur van versgemalen koffie, stapels boeken in sfeervolle winkels en de perfecte mix van natuur en cultuur, is dit het ideale weekend voor twee mensen die van mooie dingen houden. Pak jullie rugzak, zet de GPS op Aachen, en ontdek samen een van de verborgen juwelen van Europa.</p>
   <p style="margin-top: 16px; opacity: 0.7; font-size: 13px;">15 – 17 mei &nbsp;·&nbsp; Voor 2 personen &nbsp;·&nbsp;</p>
-  <div class="footer-hearts">📚 🌿 🎲</div>
+  <div class="footer-hearts">📚 🌿 🎲</div> -->
 </div>
 
 </body>
